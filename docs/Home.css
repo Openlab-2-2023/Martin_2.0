@@ -36,13 +36,12 @@ img {
     height: 100%;
 }
 
-.Onás {
+.footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 40px;
-}
+    padding: 10px;
 
-.
+    bottom: 0;
+    width: 100%;
+}
