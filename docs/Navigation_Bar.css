@@ -34,3 +34,7 @@ li a:hover:not(.active) {
 .navbar {
   font-family: "Palanquin Dark", "Open Sans", sans-serif;
 }
+
+html {
+  font-family: "Palanquin Dark", "Open Sans", sans-serif;
+}
