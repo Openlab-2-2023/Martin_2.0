@@ -1,0 +1,244 @@
+h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.box {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #d1c73f;
+  border-radius: 12px;
+
+  width: 46.625rem;
+  max-width: 100%;
+  display: flex;
+  padding: 1.25rem 2rem;
+
+  position: absolute;
+  bottom: 45px;
+  display: flex;
+  width: 100%;
+}
+
+.text-box {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.IP {
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: "Palanquin Dark", "Open Sans", sans-serif;
+  background-color: #1d1d1d;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  bottom: 0px;
+  text-align: center;
+  z-index: 3;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+}
+
+.ip {
+  color: #888229;
+}
+
+.text1 {
+  font-size: 5rem;
+  font-weight: 700;
+  padding-top: 80px;
+  text-align: center;
+  color: #b3b3b3;
+  animation: infinite 0.5s pulse;
+  transition: 0.25s;
+}
+
+.profil {
+  background-image: url(pictures/Forest.jpg);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  height: 70%;
+}
+
+.sec {
+  width: 100%;
+  background-image: url(pictures/Forest.jpg);
+  background-repeat: no-repeat !important;
+  background-size: auto;
+  background-size: 100%;
+}
+
+.nadpis {
+  color: #d1c73f;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 750;
+  padding-bottom: 90px;
+}
+
+.join-text {
+  color: #fff;
+  font-size: larger;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.join {
+  background-color: #d1c73f;
+  padding: 8px 10px;
+  max-width: 180px;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  transition: transform 0.3s ease;
+}
+
+.click {
+  text-align: center;
+  color: #a7a7a7;
+}
+
+.join:hover {
+  background-color: #d1c73f;
+  transform: scale(1.1);
+}
+
+#grad1 {
+  height: 150px;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #1d1d1d);
+  z-index: 5;
+  top: 100%;
+}
+
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  color: #b3b3b3;
+}
+
+.info1 {
+  background-color: rgb(212, 87, 29);
+  color: #b3b3b3;
+}
+
+.why {
+  padding-top: 4rem;
+  font-size: 3rem;
+  font-weight: 750;
+  text-align: center;
+}
+
+.cat {
+  padding-top: 4rem;
+  font-size: 3rem;
+  font-weight: 750;
+  text-align: center;
+  color: #b3b3b3;
+}
+
+.box-why {
+  text-align: center;
+}
+
+.box-cat {
+  text-align: center;
+}
+
+.profil-karticka {
+  width: 330px;
+  background-color: rgb(43, 43, 43);
+  text-align: center;
+  margin: 10px;
+  border-radius: 3%;
+  display: inline-block;
+  font-size: small;
+}
+
+.icon-karticka {
+  width: 200px;
+  background-color: rgb(43, 43, 43);
+  text-align: center;
+  margin: 10px;
+  border-radius: 3%;
+  display: inline-block;
+  font-size: small;
+  transition: transform 0.3s ease;
+}
+
+.icon-karticka:hover {
+  transform: scale(1.05);
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  max-width: 70%;
+  height: auto;
+  padding-top: 10px;
+  transition: rotate 0.3s ease;
+}
+
+.icon:hover {
+  rotate: 5deg;
+}
+
+.profil-udaje {
+  font-size: 20px;
+  color: #b3b3b3;
+}
+
+.icon-udaje {
+  font-size: 20px;
+  color: #b3b3b3;
+  font-weight: 600;
+}
+
+.info-m {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  max-width: 100px;
+}
+
+.icon-link {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#d1c73f, #6b6620);
+  border-radius: 10px;
+}

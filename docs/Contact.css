@@ -1,0 +1,101 @@
+html {
+  background-color: #1d1d1d;
+  font-family: "Palanquin Dark", "Open Sans", sans-serif;
+}
+
+html {
+  font-family: "Palanquin Dark", "Open Sans", sans-serif;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.social-icons img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 150px;
+  color: #b3b3b3;
+}
+
+.insta {
+  color: #405de6;
+  font-weight: bold;
+}
+
+.dis {
+  color: #7289da;
+  font-weight: bold;
+}
+
+.you {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.tik {
+  color: #25f4ee;
+  font-weight: bold;
+}
+
+svg:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.link {
+  background-color: rgb(43, 43, 43);
+  padding-left: 15px;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+.icon-link {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#d1c73f, #6b6620);
+  border-radius: 10px;
+}

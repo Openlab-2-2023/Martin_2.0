@@ -13,8 +13,8 @@ ul {
   top: 0;
   width: 100%;
   left: 0;
+  z-index: 3;
 }
-
 li {
   float: left;
 }
@@ -29,6 +29,8 @@ li a {
 
 li a:hover:not(.active) {
   background-color: #d1c73f;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .navbar {
@@ -37,4 +39,63 @@ li a:hover:not(.active) {
 
 html {
   font-family: "Palanquin Dark", "Open Sans", sans-serif;
+}
+
+.dropbtn {
+  background-color: #6e6922;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 50rem;
+  width: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #333;
+  min-width: 106px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 8;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #d1c73f;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#d1c73f, #6b6620);
+  border-radius: 10px;
 }
