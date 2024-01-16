@@ -32,18 +32,86 @@
         <div id="grad1"></div>
     </div>
 
-    <div class="join">
+
+<div class="join-box">   
+    <button id="myBtn" class="join">
         <p class="join-text">deli-cube.net <i class="fas fa-play" style="line-height: 1; color: rgb(255, 255, 255);"></i></p>
         <p class="click">KLIKNITE NA PRIPOJENIE</p>
-    </div>
+    </button>
+</div>
+
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="modal-text">1. Zapni minecraft</p>
+    <p class="modal-text">2. Klikni na multiplayer</p>
+    <p class="modal-text">3. Pridaj server</p>
+    <p class="modal-text">4. Napiš tam tuto ip adresu: <span class="yellow-text">deli-cube.net</span> <i onclick="myFunction()" class="fa-regular fa-copy" style="color: #ffffff; cursor: pointer;" id="opy"></i></span></p>
+    <p class="modal-text">5. Pripoj sa</p>
+  </div>
+  <input type="text" value="deli-cube.net" id="myInput" style="display: none;">
+        <script>
+        function myFunction() {
+        // Get the text field
+        var copyText = document.getElementById("myInput");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+
+        // Alert the copied text
+        alert("IP adresa bola skopírovaná: " + copyText.value);
+        }
+    </script>
+</div>
     
+<script>
+    
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
+
+        <div class="main-box">
+        <p class="cat">O DELICUBE</p>
+                <div class="backimage"><img src="pictures/Dogaide-pose.png" class="pose"></div>
+        <div class="box-text">
+                <p class="text-about">Vitajte na našom serveri Minecraft, kde kombinujeme rôzne režimy a minihry pre maximálnu zábavu! Ponúkame nielen tradičné hry Survival a BedWars, ale aj vzrušujúce minihry ako Parkour a BuildSwap.
+                    Sme európsky server. Prepracované hodnosti, vyvážené úlohy a množstvo bední vytvárajú nekonečné možnosti.
+                    Pridajte sa a spoznajte svet Minecraftu v celej jeho kráse! Dúfame, že vás aspoň trochu zaujme a že na našom serveri zažijete nezabudnuteľné dobrodružstvo. Sledujte novinky a pridajte sa k hernej komunite, kde sa hranie hier stáva nezabudnuteľným zážitkom!
+                </p>
+            </div>
+        </div>
+    
+
     <div class="info">
-        <p class="cat">PREČO DELICUBE</p>
+        <p class="cat">PREČO DELICUBE?</p>
         <div class="box-why">
             <div class="profil-karticka">
                 <img src="pictures/Update-icon.png" class="icon">
                 <h1 class="profil-udaje">Časté aktualizácie</h1>
-                <p class="rank"><b>Servery pravidelne aktualizujeme, <br>aby ste sa nenudili</b></p>
+                <p class="rank"><b>Na servery pravidelne pridávame aktualizácie <br>aby ste sa nenudili</b></p>
             </div>
             <div class="profil-karticka">
                 <img src="pictures/Comunity-icon.png" class="icon">
@@ -53,7 +121,7 @@
             <div class="profil-karticka">
                 <img src="pictures/A-team-icon.png" class="icon">
                 <h1 class="profil-udaje">Vysokokvalitný A-tím</h1>
-                <p class="rank"><b>Máme kvalitný administratívny tím,  <br>na ktorý sa môžete spoľahnúť</b></p>
+                <p class="rank"><b>Máme kvalitný tím administrátorov <br>na ktorý sa môžete spoľahnúť</b></p>
             </div>
         </div>
     </div>
@@ -94,6 +162,7 @@
                     </div>
                 </th>
             </tr>
+
         </div>
     </div>
     <p><br></p>

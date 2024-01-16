@@ -20,9 +20,9 @@
             <li><div class="dropdown">
                 <button class="dropbtn">LANGUAGE</button>
                 <div class="dropdown-content">
-                <a href="ENG-index.html"><img src="pictures/united-kingdom.png"  style="max-width: 20px;"> English</a>
-                <a href="SK-index.html"><img src="pictures/slovakia.png" style="max-width: 20px;"> Slovakia</a>
-                <a href="CZ-index.html"><img src="pictures/czech-republic.png" style="max-width: 20px;"> Czech</a>
+                <a href="ENG-index.html" class="english"><img src="pictures/united-kingdom.png"  style="max-width: 20px;"> English</a>
+                <a href="SK-index.html" class="slovak"><img src="pictures/slovakia.png" style="max-width: 20px;"> Slovakia</a>
+                <a href="CZ-index.html" class="czech"><img src="pictures/czech-republic.png" style="max-width: 20px;"> Czech</a>
                 </div>
               </div></li>
         </ul>
@@ -33,13 +33,81 @@
         <div id="grad1"></div>
     </div>
 
-    <div class="join">
+
+<div class="join-box">   
+    <button id="myBtn" class="join">
         <p class="join-text">deli-cube.net <i class="fas fa-play" style="line-height: 1; color: rgb(255, 255, 255);"></i></p>
         <p class="click">CLICK TO JOIN</p>
-    </div>
+    </button>
+</div>
+
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="modal-text">1. Zapni minecraft</p>
+    <p class="modal-text">2. Klikni na multiplayer</p>
+    <p class="modal-text">3. Pridaj server</p>
+    <p class="modal-text">4. Napiš tam tuto ip adresu: <span class="yellow-text">deli-cube.net</span> <i onclick="myFunction()" class="fa-regular fa-copy" style="color: #ffffff; cursor: pointer;" id="opy"></i></span></p>
+    <p class="modal-text">5. Pripoj sa</p>
+  </div>
+  <input type="text" value="deli-cube.net" id="myInput" style="display: none;">
+        <script>
+        function myFunction() {
+        // Get the text field
+        var copyText = document.getElementById("myInput");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+
+        // Alert the copied text
+        alert("IP adress been copied: " + copyText.value);
+        }
+    </script>
+</div>
     
+<script>
+    
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
+
+        <div class="main-box">
+        <p class="cat">ABOUT DELICUBE</p>
+                <div class="backimage"><img src="pictures/Dogaide-pose.png" class="pose"></div>
+        <div class="box-text">
+                <p class="text-about">Welcome to our Minecraft server, where we combine a variety of modes and mini games for maximum fun! We offer not only traditional Survival and BedWars, but also exciting minigames like Parkour and BuildSwap.
+                    We are a European server. Sophisticated ranks, balanced jobs and a wealth of crates create endless possibilities.
+                    Come join and experience the world of Minecraft in all its glory! We hope that you will be at least a little bit interested and that you will have an unforgettable adventure on our server. Stay tuned for news and join the gaming community where gaming becomes an unforgettable experience!
+                </p>
+            </div>
+        </div>
+    
+
     <div class="info">
-        <p class="cat">WHY DELICUBE</p>
+        <p class="cat">WHY DELICUBE?</p>
         <div class="box-why">
             <div class="profil-karticka">
                 <img src="pictures/Update-icon.png" class="icon">
@@ -95,6 +163,7 @@
                     </div>
                 </th>
             </tr>
+
         </div>
     </div>
     <p><br></p>

@@ -57,3 +57,46 @@ footer {
   background: linear-gradient(#d1c73f, #6b6620);
   border-radius: 10px;
 }
+
+.Rule-n {
+  color: #d1c73f;
+  font-size: large;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.Rule-t {
+  max-width: 1000px;
+  font-size: 18px;
+  color: #b3b3b3;
+}
+
+.rule-badge-y {
+  background-color: #d1a53f;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  color: #b3b3b3;
+  font-weight: 700;
+}
+
+.rule-badge-r {
+  background-color: #d13f3f;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  color: #b3b3b3;
+  font-weight: 700;
+}
+
+.Rule-v {
+  text-align: center;
+}
+
+.napomenutia {
+  font-size: 30px;
+  text-align: center;
+  color: #b3b3b3;
+}
