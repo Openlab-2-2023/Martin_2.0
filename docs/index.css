@@ -156,6 +156,7 @@ header {
   border: none;
   width: 80%;
   border-radius: 12px;
+  height: 250px;
 }
 
 .modal-text {
@@ -282,7 +283,7 @@ header {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -332,4 +333,10 @@ header {
   .text-about {
     font-size: 1.5vw;
   }
+}
+
+.video {
+  position: absolute;
+  left: 60%;
+  bottom: 30%;
 }
