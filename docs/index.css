@@ -151,7 +151,9 @@ header {
 
 .modal-content {
   background-color: #333;
-  margin: 15% auto;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px;
   border: none;
   width: 80%;
@@ -342,6 +344,6 @@ svg {
 
 .video {
   position: absolute;
-  left: 60%;
-  bottom: 30%;
+  margin-top: -220px;
+  margin-left: 50%;
 }
