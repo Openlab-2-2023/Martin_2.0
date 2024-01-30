@@ -51,9 +51,8 @@ html {
 }
 
 .dropdown {
-  position: relative;
   display: inline-block;
-  left: 50rem;
+  margin-left: 550px;
   width: 50px;
 }
 
